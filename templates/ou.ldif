@@ -1,0 +1,3 @@
+dn: __UNIT__,__DN__
+ou: __NAME__
+objectClass: organizationalunit

@@ -1,0 +1,7 @@
+#LDAP Add manager file
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+dn: cn=__NAME__,__DN__ 
+cn: __NAME__
+description: __DESCRIPTION__
+userPassword: __PASSWORD__

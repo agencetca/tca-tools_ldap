@@ -1,0 +1,4 @@
+dn: olcDatabase={__DBNUM__}mdb,cn=config
+changetype: modify
+add: olcAccess
+olcAccess: {0}to __TO__ by __BY__ __PERM__

@@ -1,0 +1,8 @@
+#Create top-level domain
+dn: dc=__DOMAIN__
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: __DOMAIN__
+dc: __DOMAIN__
+#structuralObjectClass: organization

@@ -1,0 +1,16 @@
+#Create top-level object in domain
+dn: __DN__
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: __SHORTDESC__
+dc: __NAME__
+description: __LONGDESC__
+
+#Admin user
+dn: cn=__ADMIN__,__DN__
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: __ADMIN__
+description: __NAME__ administrator
+userPassword: __ADMINPASSWORD__

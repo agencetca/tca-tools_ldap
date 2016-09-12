@@ -1,0 +1,28 @@
+#Load dynamic backend modules
+dn: cn=module,cn=config
+objectClass: olcModuleList
+cn: module
+olcModulepath: /usr/lib/ldap
+#olcModuleload: back_mdb
+
+#Database settings
+dn: olcDatabase=mdb,cn=config
+objectClass: olcDatabaseConfig
+objectClass: olcMdbConfig
+olcDatabase: {1}mdb
+olcSuffix: __DN__
+olcDbDirectory: __DIRECTORY__
+olcRootDN: cn=__ADMIN__,__DN__
+olcRootPW: __ADMINPASSWORD__
+#olcDbConfig: set_cachesize 0 2097152 0
+#olcDbConfig: set_lk_max_objects 1500
+#olcDbConfig: set_lk_lmax_locks 1500
+#olcDbConfig: set_lk_max_lockers 1500
+olcDbIndex: objectClass eq
+olcLastMod: TRUE
+olcDbCheckpoint: 512 30
+olcAccess: to attrs=userPassword by dn="cn=__ADMIN__,__DN__" write by anonymous auth by self write by * none
+olcAccess: to attrs=shadowLastChange by self write by * read
+olcAccess: to dn.base="" by * read
+olcAccess: to * by dn="cn=__ADMIN__,__DN__" write by * read
+

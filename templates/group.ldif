@@ -1,0 +1,6 @@
+#LDAP Add Group file
+dn: __UNIT__,__DN__
+objectClass: groupOfNames
+cn: __NAME__
+#Add Members below
+__FIRSTMEMBER__

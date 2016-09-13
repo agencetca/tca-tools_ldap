@@ -1,0 +1,5 @@
+#LDAP innov24: OU ou=accounts Creation file
+#Created lundi 12 septembre 2016, 18:30:32 (UTC+0000)
+dn: ou=accounts,dc=innov24,dc=tca
+ou: accounts
+objectClass: organizationalunit

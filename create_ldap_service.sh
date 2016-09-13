@@ -642,7 +642,7 @@ function adder {
 	new_entity file "$TMPFILE"
 
 	UNITTEMPLATEFILE="$TEMPLATEDIR/$LDIF.ldif"
-	echo -e "Add new $TITLE (example: "$DBDOMAIN.$DBNAME".foo.bar):"
+	echo -e "Add new $TITLE (example: "$DBDOMAIN.$DBNAME".[ou=]foo.bar):"
 	echo -e "Terminate with $DBDOMAIN.$DBNAME.. or $DBDOMAIN.$DBNAME.\\"
 	while read -e -p "$DBDOMAIN.$DBNAME." -r line
 	do

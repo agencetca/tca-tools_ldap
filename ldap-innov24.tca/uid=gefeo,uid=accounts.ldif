@@ -1,0 +1,21 @@
+#LDAP innov24: OU uid=gefeo,uid=accounts Creation file
+#Created lundi 12 septembre 2016, 18:34:19 (UTC+0000)
+#LDAP Add member file
+# User account
+dn: uid=gefeo,uid=accounts,dc=innov24,dc=tca
+uid: gefeo
+cn: Guillaume Pierre
+givenName: Guillaume
+sn: gefeo
+uidNumber: 240001
+gidNumber: 240001
+homeDirectory: /home/pi/innov24/users/gefeo
+mail: guillaumeinnov24@gmail.com
+objectClass: top
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+loginShell: null
+userPassword: noctural24

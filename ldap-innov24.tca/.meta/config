@@ -1,0 +1,8 @@
+#Metadata Configuration file for innov24.tca
+#Created on lundi 12 septembre 2016, 17:22:50 (UTC+0000)
+DB:innov24.tca
+ADMIN:admin
+PASSWORD:noctural24
+ENCPASSWORD:{SSHA}VPlBe+JSGl4FFEEtynnRXrZkR1v2Hjr2
+DN:dc=innov24,dc=tca
+DBNUM:1
